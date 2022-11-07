@@ -1,0 +1,63 @@
+body {
+   margin: 0;
+} 
+/* Header */
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   padding: 0 1rem;
+}
+.nav ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   gap: .25rem;
+}
+a {
+   text-decoration: none
+}
+.webli {
+   padding: 4px;
+}
+.xoleHeader {
+   width: 8.5rem;
+   height: 5.95rem;
+}
+/* MiddleMain */
+.parent{
+   display: flex;
+   height: 50rem;
+   align-items: center;    
+   justify-content: center;  
+   
+}
+.child{
+   width: 40rem;
+   height: 45rem;
+   
+   
+}
+.video-responsive {
+   overflow: hidden;
+   padding-bottom: 56.25%;
+   position: relative;
+   height: 0;
+ }
+ 
+ .video-responsive iframe {
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+ }
+ .island {
+   position: relative;
+   width: 9.5rem;
+   height: 9.5rem;
+   padding-left: 22%;
+ }
+ 
