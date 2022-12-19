@@ -1,17 +1,18 @@
 
 import * as React from 'react';
-import './index.css'
-import './styles.css'
+import '../index.css'
+import '../styles.css'
 
 //components
-import MobileLinks from './MobileLinks'
+import MobileHeader from './MobileHeader'
 
 //other
 import {motion} from 'framer-motion'
 import { isMobile, browserName } from "react-device-detect";
+import { Link } from 'react-router-dom';
 
 //img
-import XoleLetters from './assets/otherpics/otherXoleLetters.png'
+
 
 //icons
 import {AiFillYoutube} from 'react-icons/ai'
@@ -19,84 +20,81 @@ import {AiFillInstagram} from 'react-icons/ai'
 import {FaTiktok} from 'react-icons/fa'
 import {BsSpotify} from 'react-icons/bs'
 
+
+
 export default function Header() {
     return (
+  <>
+  {isMobile  ? 
+      <MobileHeader />
+     : 
     <nav className='nav'>
+      
       <ul className='socialLinks'>
         <motion.li 
-        whileHover={{scale: 1.4}}
+        whileHover={{scale: 2}}
         className='webli'>
           <a href = "https://www.youtube.com/c/xolemusic">
-            <AiFillYoutube />
+            <AiFillYoutube size={21}/>
           </a>
         </motion.li>
         <motion.li 
-        whileHover={{scale: 1.4}}
+        whileHover={{scale: 2}}
         className='webli'>
           <a href = "https://open.spotify.com/artist/0k5vCy7OOIB6Cm3aNFRHS2">
-            <BsSpotify />
+            <BsSpotify size={21}/>
           </a>
         </motion.li>
         <motion.li
-        whileHover={{scale: 1.4}}
+        whileHover={{scale: 2}}
         className='webli'>
           <a href = "https://www.instagram.com/prodbyxole/">
-            <AiFillInstagram />
+            <AiFillInstagram size={21}/>
           </a>
         </motion.li>
         <motion.li
-        whileHover={{scale: 1.4}}
+        whileHover={{scale: 2}}
         className='webli'>
           <a href = "https://www.tiktok.com/@xolemusic">
-            <FaTiktok />
+            <FaTiktok size={21}/>
           </a>
         </motion.li>
       </ul>
-      <a href = '/' className='siteTitle'>
-        <motion.img
-        whileHover={{scale: 1.2}}
-        initial={{scale: 0}}
-        animate={{
-            scale:1,
-          }}
-          transition={{ duration: 1.5 }}
-           className='xoleHeader' src={XoleLetters} />
-      </a>
-      {isMobile ? 
-      <MobileLinks />
-     : 
+      
+      
       <ul className='webLinks'>
         <motion.li
         whileHover={{scale: 1.3}}
         className='webli'>
-          <a href = "https://xolestore.com/">
+          <Link to = '/music'>
             music
-          </a>
+          </Link>
         </motion.li>
         <motion.li
         whileHover={{scale: 1.3}}
         className='webli'>
-          <a href = "https://xolestore.com/">
-            store
-          </a>
+          <Link to = '/merch'>
+            merch
+          </Link>
         </motion.li>
         <motion.li
         whileHover={{scale: 1.3}}
         className='webli'>
-          <a href = "https://xolestore.com/">
+          <Link to = 'tour'>
             tour
-          </a>
+          </Link>
         </motion.li>
         <motion.li
         whileHover={{scale: 1.3}}
         className='webli'>
-          <a href = "https://xolestore.com/">
+          <Link to = '/contact'>
             contact
-          </a>
+          </Link>
         </motion.li>
       </ul>
-      }
       
     </nav>
+    }
+  </>
     )
 }

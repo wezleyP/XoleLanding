@@ -6,39 +6,43 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   
    padding: 0 1rem;
 }
 .nav ul {
    padding: 0;
-   margin: 0;
+   margin-top: .5rem;
    list-style: none;
    display: flex;
-   gap: .25rem;
+   
 }
 a {
    text-decoration: none
 }
 .webli {
-   padding: 4px;
+   padding: .75rem
 }
 .xoleHeader {
    width: 8.5rem;
    height: 5.95rem;
 }
 /* MiddleMain */
+.xoleLetters {
+   margin-bottom: 3rem;
+   display: flex;
+   width: 100vw;
+   align-items: center;    
+   justify-content: center;  
+}
 .parent{
    display: flex;
-   height: 50rem;
+   width: 100vw;
    align-items: center;    
    justify-content: center;  
    
 }
-.child{
-   width: 40rem;
-   height: 45rem;
-   
-   
+.child {
+   width: 50vw;
+   height: 50vh;
 }
 .video-responsive {
    overflow: hidden;
@@ -56,8 +60,61 @@ a {
  }
  .island {
    position: relative;
+   bottom: 10rem;
    width: 9.5rem;
    height: 9.5rem;
-   padding-left: 22%;
+   padding-left: 15%;
+ }
+ .parentContainer {
+   display: flex;
+   height: 100vh;
+   align-items: center;    
+   justify-content: center; 
+ }
+
+ .container {
+   margin-bottom: 10rem;
+   width: 50vw;
+   height: 50vh;
+   display: flex;
+   place-content: center;
+   place-items: center;
+   overflow: hidden;
+   
+   border-radius: 30px;
  }
  
+ .item {
+   padding: 2rem;
+   width: 107.5px;
+   height: 55px;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(black, rgb(36, 77, 165));
+   border-radius: inherit;
+ }
+/* Button */
+.buttonParent {
+   width: 9rem;
+   heigth: 2rem;
+   margin-right: 2rem;
+   text-align: center;
+   padding: .7rem;
+   background: #071c31;
+   border-radius: 1.5rem;
+   box-shadow: 2px 2px 5px lightblue;
+}
+ 
+/* contact */
+.contactParent {
+   display: flex;
+   height: 90vh;
+   width: 100vw;
+   align-items: center;    
+   justify-content: center;  
+}
+.contactChild {
+   margin: 2rem
+}
+
+
