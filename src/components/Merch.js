@@ -4,20 +4,15 @@ import '../styles.css';
 //cmpts
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import Header from './Header';
 import MiddleMerch from './MiddleMerch';
+import LinkedHeader from './LinkedHeader';
 
-import starryBackground from '../assets/backgrounds/starryBackground.png'
+
 
 function Merch() {
-   const constraintsRef = useRef(null);
   return (
-   <div style={{ backgroundImage:`url(${starryBackground})`,
-   minHeight: '100vh',
-   backgroundRepeat: 'no-repeat',
-   backgroundSize: 'cover',
-   }}>
-       <Header />
+   <div >
+       <LinkedHeader />
        <MiddleMerch />
        
    </div> 

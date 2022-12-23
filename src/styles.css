@@ -2,13 +2,13 @@ body {
    margin: 0;
 } 
 /* Header */
-.nav {
+.navWeb {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0 1rem;
 }
-.nav ul {
+.navWeb ul {
    padding: 0;
    margin-top: .5rem;
    list-style: none;
@@ -25,6 +25,15 @@ a {
    width: 8.5rem;
    height: 5.95rem;
 }
+/* Linked */
+.xoleHeaderLinked {
+   width: 6rem;
+   height: 4.2rem;
+}
+
+
+
+
 /* MiddleMain */
 .xoleLetters {
    margin-bottom: 3rem;
@@ -67,14 +76,14 @@ a {
  }
  .parentContainer {
    display: flex;
-   height: 100vh;
+   height: 91vh;
    align-items: center;    
    justify-content: center; 
  }
 
  .container {
    margin-bottom: 10rem;
-   width: 50vw;
+   width: 80vw;
    height: 50vh;
    display: flex;
    place-content: center;

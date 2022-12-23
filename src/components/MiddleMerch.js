@@ -14,7 +14,9 @@ function MiddleMerch() {
       animate={{
          scale:1,
       }}
-      transition={{ duration: 1.5 }} >drag it ;)</motion.p>
+      transition={{ duration: 1.5 }}>
+         drag it ;)
+   </motion.p>
    <motion.div 
       initial={{scale: 0.5}}
       animate={{

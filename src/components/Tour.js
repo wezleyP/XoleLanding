@@ -2,12 +2,16 @@ import React from 'react'
 import '../styles.css'
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import Header from './Header';
+import LinkedHeader from './LinkedHeader';
 
 function Tour() {
 
    const constraintsRef = useRef(null);
 
   return (
+   <div>
+   <LinkedHeader />
    <div className='parentContainer'>
    <motion.p 
       initial={{scale: 0.5}}
@@ -36,6 +40,7 @@ function Tour() {
       </motion.div>
    </motion.div>
    
+   </div>
    </div>
   )
 }

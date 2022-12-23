@@ -23,6 +23,7 @@ function App() {
       minHeight: '10vh',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
+      
     }}>
     
     <Routes>

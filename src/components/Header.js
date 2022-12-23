@@ -27,33 +27,32 @@ export default function Header() {
   <>
   {isMobile  ? 
       <MobileHeader />
-     : 
-    <nav className='nav'>
-      
+    : 
+    <nav className='navWeb'>
       <ul className='socialLinks'>
         <motion.li 
-        whileHover={{scale: 2}}
+        whileHover={{scale: 1.6}}
         className='webli'>
           <a href = "https://www.youtube.com/c/xolemusic">
             <AiFillYoutube size={21}/>
           </a>
         </motion.li>
         <motion.li 
-        whileHover={{scale: 2}}
+        whileHover={{scale: 1.6}}
         className='webli'>
           <a href = "https://open.spotify.com/artist/0k5vCy7OOIB6Cm3aNFRHS2">
             <BsSpotify size={21}/>
           </a>
         </motion.li>
         <motion.li
-        whileHover={{scale: 2}}
+        whileHover={{scale: 1.6}}
         className='webli'>
           <a href = "https://www.instagram.com/prodbyxole/">
             <AiFillInstagram size={21}/>
           </a>
         </motion.li>
         <motion.li
-        whileHover={{scale: 2}}
+        whileHover={{scale: 1.6}}
         className='webli'>
           <a href = "https://www.tiktok.com/@xolemusic">
             <FaTiktok size={21}/>
@@ -80,7 +79,7 @@ export default function Header() {
         <motion.li
         whileHover={{scale: 1.3}}
         className='webli'>
-          <Link to = 'tour'>
+          <Link to = '/tour'>
             tour
           </Link>
         </motion.li>

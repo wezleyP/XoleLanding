@@ -10,7 +10,6 @@ import {motion} from 'framer-motion'
 
 //img
 import Island from '../assets/otherpics/otherIsland.png'
-import XoleMates from '../assets/otherpics/otherXolemates.png'
 
 import { Link } from 'react-router-dom';
 import XoleLetters from '../assets/otherpics/otherXoleLetters.png'
@@ -30,7 +29,7 @@ export default function MiddleMain() {
             }}
             transition={{ duration: 1.5 }}
             className='xoleHeader' src={XoleLetters} />
-      </Link>
+          </Link>
         </div>
       
       <div className='parent'>
