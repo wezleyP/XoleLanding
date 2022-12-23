@@ -126,4 +126,56 @@ a {
    margin: 2rem
 }
 
+/* Music */
+.musicMainDiv {
+   height: 150vh;
+   
+}
+.grid {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto;
+   width: 98vw;
+   height: 100vh;
+   
+}
+
+
+/* Music Item */
+.musicItemImage {
+   height: 20rem;
+   width: 20rem;
+}
+.grid-item {
+   margin: 4rem;
+   
+}
+@media screen and (max-width: 1300px) {
+   .musicItemImage
+    {
+      height: 15rem;
+      width: 15rem;
+   }
+   .grid-item {
+      margin: 2rem;
+      
+   }
+ }
+ @media screen and (max-width: 1050px) {
+   .grid
+    {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      
+   }
+   .musicItemImage
+    {
+      height: 20rem;
+      width: 20rem;
+   }
+ }
+
+
 
