@@ -1,36 +1,50 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import '../index.css'
 import '../styles.css'
 
 //components
 import YoutubeEmbed from "../YoutubeEmbed";
 
+
 //other
 import {motion} from 'framer-motion'
 
 //img
 import Island from '../assets/otherpics/otherIsland.png'
-
-import { Link } from 'react-router-dom';
-import XoleLetters from '../assets/otherpics/otherXoleLetters.png'
+import Star from '../assets/otherpics/star.png'
+import StarTwo from '../assets/otherpics/starTwo.png'
 
 export default function MiddleMain() {
   const [move, setMove] = React.useState(false);
   const [ymove, setyMove] = React.useState(false);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const imageLocations = [
+    {x: '2.5%', y: 300 + cursorPosition.y * 0.02 },
+    {x: '10%', y: 500+ cursorPosition.y * 0.02 },
+    {x: '85%', y: 180 + cursorPosition.y * 0.02 },
+    {x: '10%', y: 100 + cursorPosition.y * 0.02 },
+    {x: '80%', y: 680 + cursorPosition.y * 0.02 },
+  ];
     return (
-      <div>
-        <div className='xoleLetters'>
-          <Link to='/' className='siteTitle'>
-            <motion.img
-            whileHover={{scale: 1.4}}
-            initial={{scale: 0}}
-            animate={{
-             scale:1,
-            }}
-            transition={{ duration: 1.5 }}
-            className='xoleHeader' src={XoleLetters} />
-          </Link>
-        </div>
+
+      <div >
+        {imageLocations.map(({ x, y }) => (
+        <motion.img
+        animate={{
+          scale: [1, 1.5, 1.5, 1, 1],
+        }}
+        transition={{
+          duration: 10,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          repeat: Infinity,
+        }}
+          src={StarTwo}
+          style={{ height: '2rem', width: '2rem', position: 'absolute', left: x, top: y }}
+        />
+      ))}
+
       
       <div className='parent'>
        <div className='child'>
@@ -53,7 +67,10 @@ export default function MiddleMain() {
           className='island'
           src={Island} 
         />
+       
     </div>
+    
+
     )
 }
 

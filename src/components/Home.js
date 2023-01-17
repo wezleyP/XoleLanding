@@ -1,27 +1,34 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import '../index.css';
 import '../styles.css';
 //cmpts
-import Header from './Header'
+import LinkedHeader from './LinkedHeader'
 import MiddleMain from './MiddleMain'
 
 //img
 import starryBackground from '../assets/backgrounds/starryBackground.png'
-import { BrowserRouter, Route } from 'react-router-dom';
-import Footer from './Footer';
+import Star from '../assets/otherpics/star.png'
 
 
 function Home() {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   return (
-   <div style={{ backgroundImage:`url(${starryBackground})`,
-   minHeight: '100vh',
-   backgroundRepeat: 'no-repeat',
-   backgroundSize: 'cover',
+    <>
+   <div onMouseMove={(event) => setCursorPosition({ x: event.clientX, y: event.clientY })}
+    style={{ backgroundImage:`url(${starryBackground})`,
+      minHeight: '100vh',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
    }}>
-       <Header />
+        <img
+          src={Star}
+          style={{ height: '1rem', width: '1rem', position: 'absolute', left: cursorPosition.x - 25, top: cursorPosition.y + 25}}
+        />
+       <LinkedHeader />
        <MiddleMain />
-       <Footer />
    </div> 
+
+   </>
   )
 }
 

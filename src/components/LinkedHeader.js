@@ -33,28 +33,28 @@ export default function LinkedHeader() {
         <motion.li 
         whileHover={{scale: 1.6}}
         className='webli'>
-          <a target="_blank" href = "https://www.youtube.com/c/xolemusic">
+          <a href = "https://www.youtube.com/c/xolemusic"  target="_blank" rel="noopener noreferrer">
             <AiFillYoutube size={21}/>
           </a>
         </motion.li>
         <motion.li 
         whileHover={{scale: 1.6}}
         className='webli'>
-          <a target="_blank" href = "https://open.spotify.com/artist/0k5vCy7OOIB6Cm3aNFRHS2">
+          <a href = "https://open.spotify.com/artist/0k5vCy7OOIB6Cm3aNFRHS2"  target="_blank" rel="noopener noreferrer">
             <BsSpotify size={21}/>
           </a>
         </motion.li>
         <motion.li
         whileHover={{scale: 1.6}}
         className='webli'>
-          <a target="_blank" href = "https://www.instagram.com/prodbyxole/">
+          <a href = "https://www.instagram.com/prodbyxole/"  target="_blank" rel="noopener noreferrer">
             <AiFillInstagram size={21}/>
           </a>
         </motion.li>
         <motion.li
         whileHover={{scale: 1.6}}
         className='webli'>
-          <a target="_blank" href = "https://www.tiktok.com/@xolemusic">
+          <a href = "https://www.tiktok.com/@xolemusic"  target="_blank" rel="noopener noreferrer">
             <FaTiktok size={21}/>
           </a>
         </motion.li>

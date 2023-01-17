@@ -1,20 +1,23 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import '../index.css';
 import '../styles.css';
 //cmpts
-import { useRef } from "react";
-import { motion } from "framer-motion";
 import MiddleMerch from './MiddleMerch';
 import LinkedHeader from './LinkedHeader';
 
-
+import Star from '../assets/otherpics/star.png'
 
 function Merch() {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   return (
-   <div >
-       <LinkedHeader />
-       <MiddleMerch />
+   <div onMouseMove={(event) => setCursorPosition({ x: event.clientX, y: event.clientY })}>
        
+       <LinkedHeader />
+       <img
+         src={Star}
+         style={{ height: '1rem', width: '1rem', position: 'absolute', left: cursorPosition.x - 25, top: cursorPosition.y + 25}}
+       />
+       <MiddleMerch />
    </div> 
   )
   

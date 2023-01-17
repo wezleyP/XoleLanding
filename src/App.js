@@ -2,7 +2,7 @@ import * as React from 'react';
 import './index.css';
 import './styles.css';
 //cmpts
-import Header from './components/Header'
+
 
 //img
 import starryBackground from './assets/backgrounds/starryBackground.png'
@@ -12,6 +12,7 @@ import Merch from './components/Merch';
 import Tour from './components/Tour';
 import Contact from './components/Contact';
 import Home from './components/Home';
+
 //other
 
 
@@ -32,6 +33,7 @@ function App() {
       <Route path='/merch' element = {<Merch/>}/>
       <Route path='/tour' element = {<Tour/>}/>
       <Route path='/contact' element = {<Contact/>}/>
+
     </Routes>
     </div>
   </>
