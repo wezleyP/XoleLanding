@@ -1,8 +1,14 @@
 # Xole Landing
 
-This project was created with the use of React.js
+This project was created with the use of React.js for Xole, a creative indie artist.
 
-A landing page for Xole, a creative indie artist.
+# What I've Learned
 
-With the use of framer motion, the website is interactive and alive.
+React Router
+
+Mobile Headers and burger menu
+
+grid layouts with CSS
+
+Framer Motion
 
